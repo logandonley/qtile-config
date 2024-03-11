@@ -5,6 +5,7 @@ mod = "mod4"
 terminal = "alacritty"
 browser = "firefox"
 rofi_command = "rofi -show drun -show-icons"
+emoji_command = "rofi -modi emoji -show emoji -emoji-mode copy"
 
 
 keys = [
@@ -51,6 +52,7 @@ keys = [
     Key([mod], "t", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
     Key([mod], "p", lazy.spawn(rofi_command), desc="Launch rofi"),
+    Key([mod], "e", lazy.spawn(emoji_command), desc="Launch emoji picker"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
