@@ -42,7 +42,7 @@ screens = [
                     padding=5,
                 ),
                 widget.Spacer(length=12),
-                widget.Volume(
+                widget.PulseVolume(
                     fmt="v{}",
                     foreground=colors[7],
                     fontsize=12,
